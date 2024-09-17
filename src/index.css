@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply h-full;
+}
+body {
+  @apply h-full bg-gray-100;
+}
+
+.class-text-md {
+  @layer text-md;
+}
+
+.input-field-label {
+  @apply block class-text-md font-light leading-6 text-gray-900;
+}
+
+.input-field {
+  @apply block w-full p-2  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-300 sm:text-sm sm:leading-[1.6rem];
+}
+.quill-field {
+  @apply block w-full border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus-within:ring-2 focus-within:ring-inset focus-within:ring-gray-300 sm:text-sm sm:leading-[1.6rem];
+}
+
+.input-field:disabled { 
+  @apply opacity-60;
+}
+
+.menu-item-background {
+  background-color: #4880FF;
+}
+
+.search-background{
+  background: #323D4E;
+}
+
+.dashboard-background{
+  background: #F5F6FA;
+}
+.react-datepicker-wrapper{
+  display: block
+}
+
+.btn {
+  @apply font-medium text-sm py-2 px-3;
+}
+
+
+.in-progress{
+  color: #0bb6e0;
+}
+.pending{
+  color: #d4bb31;
+}
+.completed {
+  color: #1a6e16;
+}
+.rejected{
+  color: #db0d0d;
+}
+
+
+.btn-blue {
+  @apply py-3 px-4 text-sm tracking-wider font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none;
+}
+
+.btn-blue:hover {
+  @apply bg-menu-item-bg;
+}
+.btn-blue:disabled {
+  @apply bg-opacity-60 cursor-not-allowed;
+}
+
+.btn-gray {
+  @apply py-3 px-4 text-sm tracking-wider font-semibold rounded-md text-white bg-gray-500 hover:bg-gray-600 focus:outline-none;
+}
+
+.btn-gray:hover {
+  @apply bg-gray-600;
+}
+.btn-gray:disabled {
+  @apply bg-opacity-60 cursor-not-allowed;
+}
+
+
+.login-page{
+  background-image: url("../src/assets/images/background-shape.png");
+  background-repeat: no-repeat;
+  background-color:  #4880FF;
+  background-size: auto;
+}
