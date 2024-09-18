@@ -1,12 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Sofadi+One&display=swap');
+
+:root {
+  --color-dark-gray: #202224
+}
 
 html {
   @apply h-full;
 }
+
 body {
   @apply h-full bg-gray-100;
+}
+.body-class {
+  font-family: "Protest Guerrilla", sans-serif;
+  /* font-family: "Sofadi One", sans-serif; */
+}
+
+.color-text-red {
+  color: var(--color-dark-gray)
 }
 
 .class-text-md {

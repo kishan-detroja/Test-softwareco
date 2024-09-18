@@ -44,7 +44,7 @@ const Login = () => {
       <div className="min-h-screen flex flex-col items-center justify-center py-6 px-4">
         <div className="max-w-md w-full">
           <div className="p-8 rounded-2xl bg-white shadow">
-            <h2 className="text-gray-800 text-center text-2xl font-bold mb-3">
+            <h2 className=" color-text-red text-center text-2xl font-bold mb-3">
               Login to Account
             </h2>
             <span className="mt-1 text-gray-500 flex justify-center text-center text-sm ">
