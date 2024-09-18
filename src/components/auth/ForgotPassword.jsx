@@ -69,7 +69,7 @@ const ForgotPassword = () => {
                       to="/login"
                       className="text-blue-600 hover:underline ml-1 whitespace-nowrap font-semibold"
                     >
-                      Login here
+                      Login
                     </Link>
                   </p>
                 </Form>

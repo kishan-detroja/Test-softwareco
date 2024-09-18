@@ -44,9 +44,12 @@ const Login = () => {
       <div className="min-h-screen flex flex-col items-center justify-center py-6 px-4">
         <div className="max-w-md w-full">
           <div className="p-8 rounded-2xl bg-white shadow">
-            <h2 className="text-gray-800 text-center text-2xl font-bold">
-              Sign in
+            <h2 className="text-gray-800 text-center text-2xl font-bold mb-3">
+              Login to Account
             </h2>
+            <span className="mt-1 text-gray-500 flex justify-center text-center text-sm ">
+              Please enter your email and password to continue
+            </span>
             <Formik
               initialValues={{
                 email: "kishandetroja@gmail.com",
@@ -66,7 +69,7 @@ const Login = () => {
                 handleSubmit,
                 handleBlur,
               }) => (
-                <Form className="space-y-6" onSubmit={handleSubmit}>
+                <Form className="space-y-6 mt-8" onSubmit={handleSubmit}>
                   <div>
                     <label className="text-gray-800 text-sm mb-2 block">
                       Email Address
@@ -153,7 +156,7 @@ const Login = () => {
                       to="/register"
                       className="text-blue-600 hover:underline ml-1 whitespace-nowrap font-semibold"
                     >
-                      Register here
+                      Create Account
                     </Link>
                   </p>
                 </Form>

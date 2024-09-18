@@ -58,8 +58,11 @@ const Register = () => {
       <div className="max-w-md w-full mx-auto border border-gray-300 rounded-2xl p-8 bg-white">
         <div className="text-center mb-12">
           <h2 className="text-gray-800 text-center text-2xl font-bold">
-            Register
+            Register an Account
           </h2>
+          <span className="mt-1 text-gray-500 flex justify-center text-center text-sm ">
+            Create an Account to Continue
+          </span>
         </div>
 
         <Formik
@@ -208,7 +211,7 @@ const Register = () => {
                   to={"/login"}
                   className="text-blue-600 font-semibold hover:underline ml-1"
                 >
-                  Login here
+                  Login
                 </Link>
               </p>
             </Form>
